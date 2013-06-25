@@ -6,5 +6,5 @@
 //  Copyright (c) 2013 Greengar. All rights reserved.
 //
 
-#import <Whiteboard/WBSession.h>
+#import <Whiteboard/WBBoard.h>
 #import <Whiteboard/WBUtils.h>

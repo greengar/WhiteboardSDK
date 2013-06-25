@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A986654C177A3F5800823F8F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A986654B177A3F5800823F8F /* AssetsLibrary.framework */; };
+		A986654E177A3F8000823F8F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A986654D177A3F8000823F8F /* CoreLocation.framework */; };
 		A98B7BAA17642B6E0073BFF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98B7BA917642B6E0073BFF1 /* UIKit.framework */; };
 		A98B7BAC17642B6E0073BFF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98B7BAB17642B6E0073BFF1 /* Foundation.framework */; };
 		A98B7BAE17642B6E0073BFF1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98B7BAD17642B6E0073BFF1 /* CoreGraphics.framework */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A986654B177A3F5800823F8F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A986654D177A3F8000823F8F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A98B7BA617642B6E0073BFF1 /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98B7BA917642B6E0073BFF1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A98B7BAB17642B6E0073BFF1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A986654E177A3F8000823F8F /* CoreLocation.framework in Frameworks */,
+				A986654C177A3F5800823F8F /* AssetsLibrary.framework in Frameworks */,
 				A98B7BEE17642C250073BFF1 /* QuartzCore.framework in Frameworks */,
 				A98B7BEC17642C190073BFF1 /* OpenGLES.framework in Frameworks */,
 				A98B7BAA17642B6E0073BFF1 /* UIKit.framework in Frameworks */,
@@ -119,7 +125,9 @@
 		A98B7BA817642B6E0073BFF1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A986654B177A3F5800823F8F /* AssetsLibrary.framework */,
 				A98B7BAD17642B6E0073BFF1 /* CoreGraphics.framework */,
+				A986654D177A3F8000823F8F /* CoreLocation.framework */,
 				A98B7BAB17642B6E0073BFF1 /* Foundation.framework */,
 				A98B7BEB17642C190073BFF1 /* OpenGLES.framework */,
 				A98B7BED17642C250073BFF1 /* QuartzCore.framework */,
@@ -502,6 +510,7 @@
 				A98B7BE317642B6F0073BFF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A98B7BE417642B6F0073BFF1 /* Build configuration list for PBXNativeTarget "DrawingAppTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +519,7 @@
 				A98B7BE617642B6F0073BFF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

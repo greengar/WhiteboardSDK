@@ -13,26 +13,28 @@ You can integrate the Whiteboard SDK in your iOS app to quickly provide powerful
 Quick Start:
 
 1. Drag `Whiteboard.framework` and `Whiteboard.bundle` into your project.
-2. Link `OpenGLES.framework` and `QuartzCore.framework` in your project's target.
+2. Link `OpenGLES.framework`, `QuartzCore.framework`, `AssetsLibrary.framework`, `CoreLocation.framework` in your project's target.
    1. In the Project Navigator, click your project.
    2. Select your target, then choose the "Build Phases" tab.
    3. Expand the "Link Binary With Libraries" section and click the "+" button to choose the frameworks to add.
 3. Go to your target's **Build Settings** and add to **Other Linker Flags**: `-lstdc++`
 4. In your view controller's header file, import the Whiteboard header file: `#import <Whiteboard/Whiteboard.h>`
-5. Implement the `WBSessionDelegate` protocol:
+5. Implement the `WBBoardDelegate` protocol:
 ```Objective-C
-YourViewController <WBSessionDelegate>
+YourViewController <WBBoardDelegate>
 ...
 ```
 
-6. In your implementation file, present the SmartboardController:  
+6. In your implementation file, create and present a WBBoard:
 ```Objective-C
-[[WBSession activeSession] presentSmartboardControllerFromController:viewController withImage:imageToEdit delegate:objectForCallback];
+WBBoard *board = [[WBBoard alloc] init];
+[board showMeWithAnimationFromController:self];
 ```
 
 7. Implement the delegate callback to get the image output:  
 ```Objective-C
-- (void)doneEditingPhotoWithResult:(UIImage *)image {
+- (void)doneEditingBoardWithResult:(UIImage *)image
+{
     // Do something with image
     // ...
 }

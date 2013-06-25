@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Whiteboard/Whiteboard.h>
 
-@interface DAViewController : UIViewController <WBSessionDelegate>
+@interface DAViewController : UIViewController <WBBoardDelegate>
 
 @end

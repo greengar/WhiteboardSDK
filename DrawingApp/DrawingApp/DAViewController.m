@@ -22,10 +22,12 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-    [[WBSession activeSession] presentSmartboardControllerFromController:self withImage:nil delegate:self];
+    WBBoard *board = [[WBBoard alloc] init];
+    [board showMeWithAnimationFromController:self];
 }
 
-- (void)doneEditingPhotoWithResult:(UIImage *)image {
+- (void)doneEditingBoardWithResult:(UIImage *)image
+{
     // Do something with image
     NSLog(@"got image %@", image);
 }
